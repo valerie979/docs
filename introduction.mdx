@@ -1,71 +1,45 @@
 ---
-title: Introduction
-description: "Welcome to the home of your new documentation"
+title: Get Started
 ---
-
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.svg"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.svg"
-  alt="Hero Dark"
-/>
 
 ## Setting up
 
-The first step to world-class documentation is setting up your editing environnments.
+1. Navigate to https://duckie.ai/app
+2. Log in with your Github account, and install the Duckie Github App
+3. Click "Create a Duckie Agent"
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
 
-## Make it yours
+## Guideline
+### Write objectives
+<img width="400" src="logo/objective.png" />
+An Objective includes two parts:
 
-Update your docs to your brand and add valuable content for the best user conversion.
+**Objective name** - a summary of what you'd like Duckie to do
+<br />**Objective description** - description of your objective
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/components/accordion"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/showcase"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+A good objective would include two key elements:
+1. where the code changes should be - file names, function names.
+2. what to change - give clear instructions to Duckie on what to change
+
+Sample Objectives:
+
+
+### Interact with Duckie 🐥
+You can interact with Duckie throughout the dev flow: 
+
+**Objective Clarification**
+  - Duckie will ask you questions regarding your objective, to align with you on the.
+<br />**Planning** 
+  - After getting a clear idea on the objective, Duckie will start planning. You can provide feedback to Duckie regarding the plan, and Duckie will revise the plan accordingly.
+**Task Executions** 
+  - After setting a plan, Duckie will start executing the tasks. You can chat with Duckie to make any modifications to the task.
+**Code Review** 
+  - After tasks are finished, Duckie will publish a Pull Request for you. You can directly comment on the PR, and Duckie will publish new commits to address them.
+
+## Limitations
+Right now, we recommend use Duckie for coding tasks that require:
+<br />  < 200 lines of changes
+<br />  < 5 files to be modified
+<br />  each file to be modified should have < 16k characters
+
+If you want Duckie to work on a more complex tasks, we recommend break them down to sub-tasks and create a Duckie agent for each one.
