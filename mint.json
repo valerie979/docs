@@ -20,8 +20,8 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Join our Discord 🐣",
+      "url": "https://discord.gg/TGhtSxub"
     }
   ],
   "topbarCtaButton": {
